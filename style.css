@@ -1,0 +1,29 @@
+body{
+    background-color: aquamarine;
+}
+
+h1{
+    color: blue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 300%;
+    text-align: center;
+}
+/* color: adds the color on the text. font-family changes the "text style". font-size changes the size of the text. text-align: center puts the text in center */
+h2{
+    color: green;
+    background-color: blue;
+    border: 2px solid brown;
+    padding: 5px;
+    margin: 20px;
+    /* boder: adds a squre around the text. 2px defines the pixels and at least u add a color for the border */
+    /* padding gives the border more room from the text and margin gives the border space outside of the border*/
+}
+
+i{
+    color:purple;
+}
+
+p{
+    color: red;
+    
+}
