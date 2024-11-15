@@ -8,26 +8,32 @@
         em{
             color:brown;
         }
+        
     </style>
     <!-- when style is inside the html like above its a internal css code. not what we will learn to be using  -->
     <link rel="stylesheet" href="style.css">
     <!-- I referred to the style.cc doc to get the stylesheet for the html -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon-16x16.png">
+    <!--favicon gives an small image in the browser -->
 </head>
 <body>
-    <h1> This is the Homepage </h1>
+    
+    <div class="header">
+        <h1> This is the Homepage of html & css</h1>
+    </div> 
     <!-- <h1> is the first and the biggest of the headers -->
     
     <hr>
     <!-- hr makes an underline and dont need a closing tag -->
     
-    <p> <b>Welcome to the homepage, hope you like what you see</b> </p>
+    <p> <b>Welcome to the homepage, hope you like what you see even if it looks like a mess</b> </p>
     <!-- <p> makes a paragraph <b> makes it bold -->
     <!-- is the way to use bold or another element like <i> within a praragraph as used in the first paragraph -->
     
     <h2> Look at this nice picture </h2>
     <!--  <h2> are the second header and they become smaller and smaller right out the gate like: h3-h6 -->
     
-    <img src="./images/465182891_10230195100996523_8489863824838967215_n.png"title="Honk" alt="Just a meme"width="250px"hight="450px">
+    <img src="./images/465893105_533086062944869_2959771141566456302_n.jpg"title="c++ in html" alt="Just a meme"width="250px"hight="450px">
     <!-- ./ so the browser finds to the img folder -->
     <!-- ../ looking outside of the host folder -->
     <!-- in src i referred to the images folder then the name of the imagees -->
@@ -56,7 +62,7 @@
        \__|_____|__/</pre>
     <!-- <pre> makes so the teddy bear dont look like its been run over with a car and just stay on one line, but makes it stay as its written. -->
     <br>
-    <small>Is it so small you cant read it? false</small>
+    <small>Is it so small you cant read it? false;</small>
     <!-- no, you can still read it. small just does what it says -->
     <br>
     <em>This is no regular homepage</em>
@@ -71,15 +77,17 @@
     <!-- gives the text and underline -->
     <br>
     <br>
-    H<sub>2</sub>O is important
-    <!-- sub puts down the number like in H2o, but why do the rest of the text work? -->
+    <p>H<sub>2</sub>O is important</p>
+    <!-- sub puts down the number like in H2O -->
     <br>
     <br>
     <p>10<sup>5</sup> + 2 simple maths</p>
     <!-- sup puts the number up like in maths -->
     <br>
+    <p> Lets put some of this text in a <span style="border: 2px solid black;">box</span></p>
+    <!-- <span style ="" gives a border around just a part of the text -->
     <br>
-    <a href="https://www.youtube.com/watch?v=qz0aGYrrlhU" target="_blank">Click the link to learn html and css</a>
+    <a href="https://www.youtube.com/watch?v=qz0aGYrrlhU" target="_blank">Click the link to learn html and css on YT</a>
     <!-- <a> define a link, you put the link you want in href and the text you want the reader to read as the link after target="_blank"-->
     <!-- target defines where to open the liked doc -->
     <!-- adding the target="_blank" makes it so that the url is opened in a new window -->
@@ -91,6 +99,91 @@
     </a>
     <!-- this img is direct from a webpage and use the img url in the src, gif can also be used, but can be a problem if the pic is removed from the sorce.  -->
    
+<!-- ***NOTE TO SELF: sjekk opp i problemet te div å class .header**  learn about css box model   -->
+    <!-- <ul> unordered-->
+    <!--   <li>item1, 2, 3 osv</li> gives dots after paragraf-->
+    <!-- <ol> gives numbers orderlist -->
+    
+    <!-- ol>li*7{deltaker$} -->
+    <ol>
+        <li>deltaker1</li>
+        <li>deltaker2</li>
+        <li>deltaker3</li>
+        <li>deltaker4</li>
+        <li>deltaker5</li>
+        <li>deltaker6</li>
+        <li>deltaker7</li>
+    </ol>
+    <div class="div1">
+        <!-- this way you can have more than one styles on different div -->
+    <ul>
+        <li>RandomList of ul1</li>
+        <li>RandomList of ul2</li>
+        <li>RandomList of ul3</li>
+        <li>RandomList of ul4</li>
+        <li>RandomList of ul5</li>
+        <li>RandomList of ul6</li>
+    </ul>
+    </div>
 
-</body>
+    <!-- ul.counter>li*5{emoji $} -->
+     <div>
+    <ul class="counter">
+        <li>emoji1</li>
+        <li>emoji2</li>
+        <li>emoji3</li>
+        <li>emoji4</li>
+        <li>emoji5</li>
+    </ul>
+    </div>    
+<!-- testing div in other situvations -->
+     <dl>
+        <dt> Coffee Recipie </dt>
+        <dd> coffee powder</dd>
+        <dd> water </dd>
+     </dl>
+     <!-- <ul>	Defines an un-ordered list
+    <ol>	Defines an ordered list
+    <li>	Defines a list item
+    <dl>	Defines a description list
+    <dt>	Defines a term in a description list
+    <dd>	Describes the term in a description list -->
+     <!-- gives you a list with space for paragrafs, more info @mdn -->
+     <img src="./images/465737713_1691168738393640_3571834893211840898_n.jpg" alt="how html, css and JS work with eachother" title="building blocks" width="250px"hight="450px">
+     <img src="./images/465761961_122140942130351448_1944612147429308593_n.jpg" alt="Learn more" title="Good webpages to learn more" width="250px"hight="300px">
+        <!-- style="" in an img does not make sence @w3schools, when they never use img in style and just gets a random value ** -->
+     <!-- the 2 img are coming next to eachother when its no brake between or given another value-->
+
+    <table>
+        <tr>
+            <th>HTML</th>
+            <th>CSS</th>
+            <th>JavaScript</th>
+        </tr>
+        <tr>
+            <td> <a href="https://html.com/" target="_blank">Click to learn HTML</a></td>
+            <td> <a href="https://www.codecademy.com/" target="_blank">Click to learn CSS</a></td>
+            <td> <a href="https://www.freecodecamp.org/" target="_blank">Click to learn JS</a></td>
+        </tr>
+    </table>
+        <!--<table> used to arrange data into rows and columns. -->
+
+        <!-- .container = <div class =  -->
+        <!-- .item.box$*3 -->
+        <div class="container">
+            <div class="item box1">div 1</div>
+            <div class="item box2">div 2</div>
+            <div class="item box3">div 3</div>
+        </div>
+        <!-- .container>.item.box$*3 is a valid shortcut -->
+        <!-- <div style="flex-grow: makes so the box can have a bigger size and grow different then the rest of the boxes. -->
+         <!-- <div style="flex-shrink" makes so the box can have  smaller size and shrink different thn the rest. -->
+    
+         <section>
+            <p>Input
+            <input type="text" name="inputurl" placeholder="type here" required>
+            <!-- this is for making a small typebox -->
+            </p>
+         </section>
+    </body>
 </html>
