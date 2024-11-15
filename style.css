@@ -1,12 +1,37 @@
 body{
-    background-color: aquamarine;
+    background-image: url(./images/html-color-codes-color-tutorials-hero.jpg);
+    background-size: cover;
+    /* background-attachment: fixed; the background will not scroll with text */
+    /* cover will cover the website */
+    /* background-repeat: no-repeat; */
+    /* then the img will not be repeated, can also use repeat-x or -y to repeat it only one axes */
+}   
+div{
+    width: 300px;
+    margin: auto;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+    background-color: palevioletred;
+    border: 5px solid green; 
+    /* div element is by default a block element, meaning that it takes all available width, and comes with line breaks before and after. */
 }
-
+.div1{
+    width: fit-content;
+}
+header{
+    color: blueviolet;
+    background-color: red;
+    /* header is a selfmade class, named it header so it makes sense since its a header */
+    /* find out why header not working */
+}
 h1{
-    color: blue;
+    
+    color: green;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 300%;
     text-align: center;
+    text-shadow: 5px 5px black;
+    /* text-shadow adds a shadow to the back of the text */
 }
 /* color: adds the color on the text. font-family changes the "text style". font-size changes the size of the text. text-align: center puts the text in center */
 h2{
@@ -19,11 +44,133 @@ h2{
     /* padding gives the border more room from the text and margin gives the border space outside of the border*/
 }
 
+em{
+    color: black;
+}
+
 i{
-    color:purple;
+    color:gold;
+    /* max-width: fit-content; */
+    /* margin-inline: auto; **Still in testing (DIV) ** */
 }
 
 p{
-    color: red;
+    color: blue;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
     
 }
+
+ol{
+list-style-type: lower-roman;
+color: black;
+background-color: rgb(145, 42, 4);
+  width: 200px;
+  height: 65px;
+  border: 2px solid;
+  overflow: auto;
+  text-align: center;
+  margin: auto;
+/* list-style-type changes the number like here to roman numbers */
+/* overflow: auto gives you a box with scrollable text */
+}
+
+ul{
+    color: black;
+    /* list-style-type: none; */
+    /* none; removes the bulletpoints from the ol list */
+}
+
+ol, ul{
+    background-color: green;
+    text-align: center;
+    font-weight: 500;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    padding: 10px;
+    list-style-position: inside;
+    /* making the bulletpoints to be next to the text inside */
+
+}
+
+ul, ol li::marker{
+    color: antiquewhite;
+    /* marker changes the bulletpoints/dots */
+}
+
+@counter-style star{
+    system:cyclic;
+    /* repeats the cycle */
+    symbols: "★" "☆" "✦" "✧" "✫";
+    /* it will reapeat the symbols if it "runs" out */
+    suffix: 
+}
+
+ul.counter li{
+ list-style-type: star;
+}
+
+table{
+    border-collapse:collapse;
+    width: 100%;
+}
+
+td, th{
+    border: solid black;
+    text-align: left;
+    padding: 5px;
+}
+
+tr:nth-child(even){
+    /* td:nth-child(even), th:nth-child(even) if you want zebra stripes insted */
+    /* makes even rows colored */
+    background-color: rgb(255, 255, 255);
+}
+
+/* FLEX-BOX */
+.container{
+    background-color: aqua;
+    display: flex;
+    justify-content: space-around;
+    /* space-between gives space around */
+    /* justify-content: center; makes it stay at center*/
+    /* justify-content: end; or start; makes it start from right or left */
+    /* display: inline-flex; */
+    /* flex-direction: column; makes it so the boxes are being in a column */
+    /* flex gives value children */
+    /* flex-wrap: wrap;  */
+    /* flex-wrap: wrap-reverse  */
+    /* makes it wrap on the oppesite order */
+    /* flex-flow: column wrap; */
+    /* flex-flow: column wrap is flex-directions and flex-wrap at once */
+    /* find good desciptions*** */
+    align-items: center;
+}
+
+.item{
+    background-color: black;
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-weight: 700;
+    box-shadow: 5px 5px 2px 4px black;
+    /* box-shadow adds what is says it does, shadow to a box */
+    /* last px like 2px in example above adds blur effect */
+    /* 4 px adds spread radius */
+    /* if added inset at the end and the shadow will be inside the box */
+}
+
+.box1{
+    color: blue;
+}
+.box2{
+    color: red;
+}
+
+.box3{
+    color: white;
+}
+/* order: can change the posistion/order of the boxes like flexfroggy. */
